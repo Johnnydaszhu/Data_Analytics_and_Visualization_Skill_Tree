@@ -7,7 +7,7 @@ Download th whole folder and then run default.html
 
 点击右上方下载整个项目，打开default.html来运行
 <p align="center">
-  <img width="546" height="342" src="https://github.com/Johnnydaszhu/Data_Analytics_and_Visualization_Skill_Tree/blob/master/demo.gif">
+  <img width="819" height="513" src="https://github.com/Johnnydaszhu/Data_Analytics_and_Visualization_Skill_Tree/blob/master/demo.gif">
 </p>
 
 I have many habits and love to show them in a very intuitive way. My postgraduate major is Data Analytics and Visualization, but I don't think the form of visualization should only limit to data side, photography and videography could be another one. To share my thought about visualization, I believe the skill tree is a good one.
