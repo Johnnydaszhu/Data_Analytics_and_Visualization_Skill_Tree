@@ -10,6 +10,10 @@ Download th whole folder and then run default.html
 
 
 <p align="center">
+  <img width="546" height="342" src="https://github.com/Johnnydaszhu/Data_Analytics_and_Visualization_Skill_Tree/blob/master/Screen%20Shot%202019-06-19%20at%203.44.55%20PM.jpg">
+</p>
+
+<p align="center">
   <img width="546" height="342" src="https://github.com/Johnnydaszhu/Data_Analytics_and_Visualization_Skill_Tree/blob/master/demo.gif">
 </p>
 
