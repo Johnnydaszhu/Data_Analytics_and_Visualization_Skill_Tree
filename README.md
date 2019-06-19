@@ -1,11 +1,11 @@
 # Data_Analytics_and_Visualization_Skill_Tree
 This is my personal visualization skill tree 
 
-Download th whole folder and then run default.html
+Click [here](https://codeload.github.com/Johnnydaszhu/Data_Analytics_and_Visualization_Skill_Tree/zip/master "to download") th whole folder and then run default.html
 
 个人整理的一个简单可视化技能树
 
-点击右上方下载整个项目，打开default.html来运行
+点击[这里](https://codeload.github.com/Johnnydaszhu/Data_Analytics_and_Visualization_Skill_Tree/zip/master "下载整个项目")下载整个项目，打开default.html来运行
 <p align="center">
   <img width="819" height="513" src="https://github.com/Johnnydaszhu/Data_Analytics_and_Visualization_Skill_Tree/blob/master/demo.gif">
 </p>
