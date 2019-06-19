@@ -8,3 +8,5 @@ Inspired by https://github.com/352Media/skilltree
 </p>
 
 使用方法，点击右上方下载整个项目
+
+MIT License
