@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>多功能的麒桦技能树</title>
+	<meta name="description" content="An RPG-style talent tree for web developers.">
+	<meta name="keywords" content="web design development rpg game talent skill">
+	<link href="css/layout.css" rel="stylesheet">
+</head>
+<body>
+	<div class="ltIE9-hide">
+		<div data-bind="css: { open: isOpen }" class="page">
+			<header>
+				<img data-bind="click: toggle" src="img/logo2.png" class="logo"></header>
+			<div class="intro">
+				<img data-bind="click: toggle" src="img/screenshot2.png"><div class="content">
+					<h2 align="left" style="color:black;">B站：多功能的麒桦
+						<br />
+						</h2>
+					<p align="left" style="color:black;">我有很多很多的爱好，我也很喜欢将它们以很有趣简单的形式展示给大家。我的研究生专业是数据分析与可视化，但我觉得可视化并不仅仅限制于数据图表的可视化，摄影视频是一种，数据可视化也是一种，所以，我觉得做一个属于我自己的可视化技能树</p>
+					<button data-bind="click: toggle">点击打开 &raquo;</button></div>
+			</div>
+			<div class="talent-tree">
+				<div class="who-made-this">
+					<!-- AddThis Button BEGIN -->
+					<div class="addthis_toolbox addthis_default_style addthis_32x32_style" style="float:right;">
+						<a class="addthis_button_facebook"></a>
+						<a class="addthis_button_twitter"></a>
+						<a class="addthis_button_google_plusone_share"></a>
+						<a class="addthis_button_email"></a>
+					</div>
+					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-520532b53c7c3dc1"></script>
+					<!-- AddThis Button END -->
+				</div>
+				<h2 class="start-helper" data-bind="css:{active:noPointsSpent}">.</h2>
+				<!--ko foreach: skills-->
+				<!--ko if: hasDependencies-->
+				<div data-bind="css: { 'can-add-points': canAddPoints, 'has-points': hasPoints, 'has-max-points': hasMaxPoints }, attr: { 'data-skill-id': id }" class="skill">
+					<div data-bind="css: { active: dependenciesFulfilled }" class="skill-dependency"></div>
+				</div>
+				<!--/ko-->
+				<!--/ko-->
+				<!--ko foreach: skills-->
+				<div data-bind="css: { 'can-add-points': canAddPoints, 'has-points': hasPoints, 'has-max-points': hasMaxPoints }, attr: { 'data-skill-id': id }" class="skill">
+					<div class="icon-container">
+						<div class="icon"></div>
+					</div>
+					<div class="frame">
+						<div class="tool-tip">
+							<h3 data-bind="text: title" class="skill-name"></h3>
+							<div data-bind="html: description" class="skill-description"></div>
+							<ul class="skill-links">
+								<!--ko foreach: links-->
+								<li>
+									<a data-bind="attr: { href: url }, click: function(){
+										_gaq.push(['_trackEvent',$parent.title, label, url]);
+										return true;
+										}, text: label" target="_blank"></a>
+								</li>
+								<!--/ko-->
+							</ul>
+							<hr data-bind="visible: currentRankDescription() || nextRankDescription()">
+							<div data-bind="if: currentRankDescription" class="current-rank-description">现有等级: <span data-bind="	text: currentRankDescription"></span></div>
+							<div data-bind="if: nextRankDescription" class="next-rank-description">下一等级: <span data-bind="	text: nextRankDescription"></span></div>
+							<hr>
+							<ul class="stats">
+								<!--ko foreach: stats-->
+								<li><span class="value">+<span data-bind="text: value"></span></span> <span data-bind="	text: title" class="title"></span></li>
+								<!--/ko-->
+							</ul>
+							<!--ko if: talentSummary-->
+							<div class="talent-summary">获得  <span data-bind="text: talentSummary"></span></div>
+							<!--/ko-->
+							<div data-bind="text: helpMessage" class="help-message"></div>
+						</div>
+						<div class="skill-points"><span data-bind="text: points" class="points"></span>/<span data-bind="	text: maxPoints" class="max-points"></span></div>
+						<div data-bind="click: addPoint, rightClick: removePoint" class="hit-area"></div>
+					</div>
+				</div>
+				<!--/ko-->
+			</div>
+			<div class="avatar">
+				<div class="portrait">
+					<img src="img/portrait-1.jpg"></div>
+				<div class="details">
+					<div class="level">等级 <span data-bind="	text: level" class="value"></span> 视觉化码农</div>
+					<div data-bind="text: talentSummary" class="talent-summary"></div>
+					<ul class="stats">
+						<!--ko foreach: stats-->
+						<li><span data-bind="text: title" class="title"></span>: <span data-bind="	text: value" class="value"></span></li>
+						<!--/ko-->
+					</ul>
+				</div>
+			</div>
+			<div class="sign-off">
+				<h2 style="color:black;">It&rsquo;s 才刚刚开始</h2>
+				<p style="color:black;">当你“学完”这些技能并且想实施当时入门前要做的东西以及开始找工作的时候，才发现之前学的东西是多么的简单，这个世界发展得是多么的快。学完是不可能学完的，这辈子都不可能的，既然学不完，那就好好享受学习的过程吧~
+				</p>
+				<ul>
+					<li><a onclick="_gaq.push(['_trackEvent','external link','footer','A List Apart']);" href="https://space.bilibili.com/4132813" target="_blank" style="color:black;">哔哩哔哩：多功能的麒桦</a></li>
+				</ul>
+				</div>
+		</div>
+	</div>
+	<div class="ltIE9-show ltIE9-warning">
+		<img src="img/logo.png" class="logo">
+		<h2>Please upgrade your browser!</h2>
+		<p>Try one of these free options:</p>
+		<ul>
+			<li><a onclick="_gaq.push(['_trackEvent','external link','upgrade browser','Chrome']);" href="http://google.com/chrome" target="_blank">Google Chrome</a></li>
+			<li><a onclick="_gaq.push(['_trackEvent','external link','upgrade browser','MSIE']);" href="http://windows.microsoft.com/en-US/internet-explorer/download-ie" target="_blank">Microsoft Internet Explorer 10</a></li>
+			<li><a onclick="_gaq.push(['_trackEvent','external link','upgrade browser','Firefox']);" href="www.mozilla.org/en-US/firefox" target="_blank">Mozilla Firefox</a></li>
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-8212672-14']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+	<script src="vendor/jquery.min.js"></script>
+	<script src="vendor/knockout.min.js"></script>
+	<script src="dist/skilltree.min.js"></script>
+	<script src="default.js"></script>
+</body>
+</html>
