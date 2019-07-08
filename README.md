@@ -7,7 +7,7 @@ Click [here](https://codeload.github.com/Johnnydaszhu/Data_Analytics_and_Visuali
 
 点击[这里](https://codeload.github.com/Johnnydaszhu/Data_Analytics_and_Visualization_Skill_Tree/zip/master "下载整个项目")下载整个项目，打开default.html来运行
 <p align="center">
-  <img width="819" height="513" src="https://github.com/Johnnydaszhu/Data_Analytics_and_Visualization_Skill_Tree/blob/master/demo.gif">
+  <img width="819" height="513" src="https://github.com/Johnnydaszhu/Data_Analytics_and_Visualization_Skill_Tree/blob/master/Screen%20Shot%202019-06-19%20at%203.44.55%20PM.jpg">
 </p>
 
 I have many habits and love to show them in a very intuitive way. My postgraduate major is Data Analytics and Visualization, but I don't think the form of visualization should only limit to data side, photography and videography could be another one. To share my thought about visualization, I believe the skill tree is a good one.
